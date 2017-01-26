@@ -1,0 +1,23 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu/xenial64
+
+verifier:
+  name: inspec
+
+suites:
+  - name: default
+    run_list:
+      - recipe[app_template_test::default]
+    verifier:
+      inspec_tests:
+        - path: test/inspec/app_template_test
+        - name: library template test
+          path: ../../../lib_template_test/cookbooks/lib_template_test/test/inspec/lib_template_test
+    attributes:

@@ -19,5 +19,5 @@ suites:
       inspec_tests:
 #        - path: test/inspec/lib_template_test
       - name: lib_template_test
-        url: https://github.com/dimpledalby07/inspec-profile-test/blob/master/lib_template_test/cookbooks/lib_template_test/test/inspec/lib_template_test.zip
+        url: https://p34r50n.net/inspec/lib_template_test.tar.gz
     attributes:
